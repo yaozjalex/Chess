@@ -1,0 +1,209 @@
+\hypertarget{classlogic_1_1BoardLogic}{\section{logic.\-Board\-Logic Class Reference}
+\label{classlogic_1_1BoardLogic}\index{logic.\-Board\-Logic@{logic.\-Board\-Logic}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classlogic_1_1BoardLogic_a8805b83ab700a29dcc71d66803199adf}{update\-Pieces} (\hyperlink{classmodel_1_1Board}{Board} board)
+\item 
+static boolean \hyperlink{classlogic_1_1BoardLogic_a1117819fcc1471cb01799198d14f3e4c}{in\-Check} (\hyperlink{classmodel_1_1Board}{Board} board, Color player)
+\item 
+static boolean \hyperlink{classlogic_1_1BoardLogic_ab5d863552542c372796ceff388e6a42b}{in\-Checkmate} (\hyperlink{classmodel_1_1Board}{Board} board, Color player)
+\item 
+static boolean \hyperlink{classlogic_1_1BoardLogic_accfe2bf1822c3b6abbcb66cb2e78e7b9}{in\-Stalemate} (\hyperlink{classmodel_1_1Board}{Board} board, Color player)
+\item 
+static Vector$<$ \hyperlink{classmodel_1_1Space}{Space} $>$ \hyperlink{classlogic_1_1BoardLogic_a1362b857bf585f1bfe2a1b55377d3ae6}{moves\-On\-Board} (\hyperlink{classmodel_1_1Board}{Board} board, \hyperlink{classpiece_1_1Piece}{Piece} piece)
+\item 
+static boolean \hyperlink{classlogic_1_1BoardLogic_a20d53bc0146f9c90598880bd8f731fe4}{move\-Piece} (\hyperlink{classmodel_1_1Board}{Board} board, \hyperlink{classpiece_1_1Piece}{Piece} piece, int rtarget, int ftarget)
+\item 
+static boolean \hyperlink{classlogic_1_1BoardLogic_a5fec15d32e299f21a067c90a1d28afbf}{set\-Piece} (\hyperlink{classmodel_1_1Board}{Board} board, \hyperlink{classpiece_1_1Piece}{Piece} piece, int rank, int file, Color player)
+\item 
+static \hyperlink{classpiece_1_1Piece}{Piece} \hyperlink{classlogic_1_1BoardLogic_ad087d5f282d8bc4291263a2135dd3466}{get\-Piece} (\hyperlink{classmodel_1_1Board}{Board} board, int rank, int file)
+\item 
+static boolean \hyperlink{classlogic_1_1BoardLogic_a84fa3af836d6218a29167e97f22962fe}{out\-Of\-Bounds} (\hyperlink{classmodel_1_1Board}{Board} board, int rank, int file)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classlogic_1_1BoardLogic_ad087d5f282d8bc4291263a2135dd3466}{\index{logic\-::\-Board\-Logic@{logic\-::\-Board\-Logic}!get\-Piece@{get\-Piece}}
+\index{get\-Piece@{get\-Piece}!logic::BoardLogic@{logic\-::\-Board\-Logic}}
+\subsubsection[{get\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Piece} logic.\-Board\-Logic.\-get\-Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Board}}]{board, }
+\item[{int}]{rank, }
+\item[{int}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1BoardLogic_ad087d5f282d8bc4291263a2135dd3466}
+Get piece on board 
+\begin{DoxyParams}{Parameters}
+{\em board} & the board to get piece \\
+\hline
+{\em rank} & the x (rank) location of the piece \\
+\hline
+{\em file} & the y (file) location of the piece \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the piece at a given space 
+\end{DoxyReturn}
+\hypertarget{classlogic_1_1BoardLogic_a1117819fcc1471cb01799198d14f3e4c}{\index{logic\-::\-Board\-Logic@{logic\-::\-Board\-Logic}!in\-Check@{in\-Check}}
+\index{in\-Check@{in\-Check}!logic::BoardLogic@{logic\-::\-Board\-Logic}}
+\subsubsection[{in\-Check}]{\setlength{\rightskip}{0pt plus 5cm}static boolean logic.\-Board\-Logic.\-in\-Check (
+\begin{DoxyParamCaption}
+\item[{{\bf Board}}]{board, }
+\item[{Color}]{player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1BoardLogic_a1117819fcc1471cb01799198d14f3e4c}
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the board to check whether the player is in\-Check \\
+\hline
+{\em player} & the color of the player check for check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given player is in check 
+\end{DoxyReturn}
+\hypertarget{classlogic_1_1BoardLogic_ab5d863552542c372796ceff388e6a42b}{\index{logic\-::\-Board\-Logic@{logic\-::\-Board\-Logic}!in\-Checkmate@{in\-Checkmate}}
+\index{in\-Checkmate@{in\-Checkmate}!logic::BoardLogic@{logic\-::\-Board\-Logic}}
+\subsubsection[{in\-Checkmate}]{\setlength{\rightskip}{0pt plus 5cm}static boolean logic.\-Board\-Logic.\-in\-Checkmate (
+\begin{DoxyParamCaption}
+\item[{{\bf Board}}]{board, }
+\item[{Color}]{player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1BoardLogic_ab5d863552542c372796ceff388e6a42b}
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the board to to check whether the player is in\-Checkmate \\
+\hline
+{\em player} & the color of the player to check for checkmate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given player is in checkmate 
+\end{DoxyReturn}
+\hypertarget{classlogic_1_1BoardLogic_accfe2bf1822c3b6abbcb66cb2e78e7b9}{\index{logic\-::\-Board\-Logic@{logic\-::\-Board\-Logic}!in\-Stalemate@{in\-Stalemate}}
+\index{in\-Stalemate@{in\-Stalemate}!logic::BoardLogic@{logic\-::\-Board\-Logic}}
+\subsubsection[{in\-Stalemate}]{\setlength{\rightskip}{0pt plus 5cm}static boolean logic.\-Board\-Logic.\-in\-Stalemate (
+\begin{DoxyParamCaption}
+\item[{{\bf Board}}]{board, }
+\item[{Color}]{player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1BoardLogic_accfe2bf1822c3b6abbcb66cb2e78e7b9}
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the board to check whether the player is in\-Stalemate \\
+\hline
+{\em player} & the color of player to check for stalemate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if in stalemate 
+\end{DoxyReturn}
+\hypertarget{classlogic_1_1BoardLogic_a20d53bc0146f9c90598880bd8f731fe4}{\index{logic\-::\-Board\-Logic@{logic\-::\-Board\-Logic}!move\-Piece@{move\-Piece}}
+\index{move\-Piece@{move\-Piece}!logic::BoardLogic@{logic\-::\-Board\-Logic}}
+\subsubsection[{move\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}static boolean logic.\-Board\-Logic.\-move\-Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Board}}]{board, }
+\item[{{\bf Piece}}]{piece, }
+\item[{int}]{rtarget, }
+\item[{int}]{ftarget}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1BoardLogic_a20d53bc0146f9c90598880bd8f731fe4}
+Moves a piece on the board from (rstart,fstart) to (rtarget,ftarget). 
+\begin{DoxyParams}{Parameters}
+{\em board} & the board to move piece \\
+\hline
+{\em piece} & the piece to be moved \\
+\hline
+{\em rtarget} & the target rank (x position) of the move \\
+\hline
+{\em ftarget} & the target file (y position) of the move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if out\-Of\-Bound, 2 if it's the same owner, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classlogic_1_1BoardLogic_a1362b857bf585f1bfe2a1b55377d3ae6}{\index{logic\-::\-Board\-Logic@{logic\-::\-Board\-Logic}!moves\-On\-Board@{moves\-On\-Board}}
+\index{moves\-On\-Board@{moves\-On\-Board}!logic::BoardLogic@{logic\-::\-Board\-Logic}}
+\subsubsection[{moves\-On\-Board}]{\setlength{\rightskip}{0pt plus 5cm}static Vector$<${\bf Space}$>$ logic.\-Board\-Logic.\-moves\-On\-Board (
+\begin{DoxyParamCaption}
+\item[{{\bf Board}}]{board, }
+\item[{{\bf Piece}}]{piece}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1BoardLogic_a1362b857bf585f1bfe2a1b55377d3ae6}
+
+\begin{DoxyParams}{Parameters}
+{\em board} & \\
+\hline
+{\em piece} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+available moves of piece on board 
+\end{DoxyReturn}
+\hypertarget{classlogic_1_1BoardLogic_a84fa3af836d6218a29167e97f22962fe}{\index{logic\-::\-Board\-Logic@{logic\-::\-Board\-Logic}!out\-Of\-Bounds@{out\-Of\-Bounds}}
+\index{out\-Of\-Bounds@{out\-Of\-Bounds}!logic::BoardLogic@{logic\-::\-Board\-Logic}}
+\subsubsection[{out\-Of\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}static boolean logic.\-Board\-Logic.\-out\-Of\-Bounds (
+\begin{DoxyParamCaption}
+\item[{{\bf Board}}]{board, }
+\item[{int}]{rank, }
+\item[{int}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1BoardLogic_a84fa3af836d6218a29167e97f22962fe}
+Helper function that checks whether a given (rank,file) pair is within the board range. 
+\begin{DoxyParams}{Parameters}
+{\em board} & the board to check \\
+\hline
+{\em rank} & the x (rank) location of the piece \\
+\hline
+{\em file} & the y (file) location of the piece \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the position given is not a valid board position. 
+\end{DoxyReturn}
+\hypertarget{classlogic_1_1BoardLogic_a5fec15d32e299f21a067c90a1d28afbf}{\index{logic\-::\-Board\-Logic@{logic\-::\-Board\-Logic}!set\-Piece@{set\-Piece}}
+\index{set\-Piece@{set\-Piece}!logic::BoardLogic@{logic\-::\-Board\-Logic}}
+\subsubsection[{set\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}static boolean logic.\-Board\-Logic.\-set\-Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Board}}]{board, }
+\item[{{\bf Piece}}]{piece, }
+\item[{int}]{rank, }
+\item[{int}]{file, }
+\item[{Color}]{player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1BoardLogic_a5fec15d32e299f21a067c90a1d28afbf}
+Set piece on board 
+\begin{DoxyParams}{Parameters}
+{\em board} & the board to set piece \\
+\hline
+{\em piece} & the piece to set \\
+\hline
+{\em rank} & the x (rank) location of the piece \\
+\hline
+{\em file} & the y (file) location of the piece \\
+\hline
+{\em player} & the owner of the piece (W\-H\-I\-T\-E,B\-L\-A\-C\-K) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the piece was set successfully 
+\end{DoxyReturn}
+\hypertarget{classlogic_1_1BoardLogic_a8805b83ab700a29dcc71d66803199adf}{\index{logic\-::\-Board\-Logic@{logic\-::\-Board\-Logic}!update\-Pieces@{update\-Pieces}}
+\index{update\-Pieces@{update\-Pieces}!logic::BoardLogic@{logic\-::\-Board\-Logic}}
+\subsubsection[{update\-Pieces}]{\setlength{\rightskip}{0pt plus 5cm}static void logic.\-Board\-Logic.\-update\-Pieces (
+\begin{DoxyParamCaption}
+\item[{{\bf Board}}]{board}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1BoardLogic_a8805b83ab700a29dcc71d66803199adf}
+We need to maintain possible moves for each piece to detect game-\/ending conditions. 
+\begin{DoxyParams}{Parameters}
+{\em board} & the board to update pieces \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+logic/Board\-Logic.\-java\end{DoxyCompactItemize}

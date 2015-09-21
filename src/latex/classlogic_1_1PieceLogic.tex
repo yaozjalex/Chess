@@ -1,0 +1,101 @@
+\hypertarget{classlogic_1_1PieceLogic}{\section{logic.\-Piece\-Logic Class Reference}
+\label{classlogic_1_1PieceLogic}\index{logic.\-Piece\-Logic@{logic.\-Piece\-Logic}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \hyperlink{classlogic_1_1PieceLogic_aac7446d10b195afb378411addcf5b93a}{is\-Valid\-Move} (\hyperlink{classpiece_1_1Piece}{Piece} piece, int rank, int file)
+\item 
+static boolean \hyperlink{classlogic_1_1PieceLogic_a93161b8617563e7e01657c47e63187db}{same\-Owner} (\hyperlink{classpiece_1_1Piece}{Piece} piece, \hyperlink{classpiece_1_1Piece}{Piece} other)
+\item 
+static \hyperlink{classpiece_1_1Piece}{Piece} \hyperlink{classlogic_1_1PieceLogic_a82d3489e7f023e7248abab45768ecf45}{set\-Up\-Piece} (\hyperlink{classpiece_1_1Piece}{Piece} piece, Color player)
+\item 
+\hypertarget{classlogic_1_1PieceLogic_ae9554b341dd00ca6bc8ec352225276c4}{static \hyperlink{classpiece_1_1Piece}{Piece} {\bfseries copy\-Piece} (\hyperlink{classpiece_1_1Piece}{Piece} piece, \hyperlink{classpiece_1_1Piece}{Piece} other)}\label{classlogic_1_1PieceLogic_ae9554b341dd00ca6bc8ec352225276c4}
+
+\item 
+static boolean \hyperlink{classlogic_1_1PieceLogic_a89579badd601a4707cd3a45ee7934bf0}{add\-Move} (\hyperlink{classpiece_1_1Piece}{Piece} piece, \hyperlink{classpiece_1_1Piece}{Piece} cur\-Space, int rank, int file)
+\item 
+static Buffered\-Image \hyperlink{classlogic_1_1PieceLogic_a25890c82076e10599f19590780feb29c}{get\-Piece\-Image} (\hyperlink{classpiece_1_1Piece}{Piece} piece)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classlogic_1_1PieceLogic_a89579badd601a4707cd3a45ee7934bf0}{\index{logic\-::\-Piece\-Logic@{logic\-::\-Piece\-Logic}!add\-Move@{add\-Move}}
+\index{add\-Move@{add\-Move}!logic::PieceLogic@{logic\-::\-Piece\-Logic}}
+\subsubsection[{add\-Move}]{\setlength{\rightskip}{0pt plus 5cm}static boolean logic.\-Piece\-Logic.\-add\-Move (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{piece, }
+\item[{{\bf Piece}}]{cur\-Space, }
+\item[{int}]{rank, }
+\item[{int}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1PieceLogic_a89579badd601a4707cd3a45ee7934bf0}
+Update\-Moves helper that checks if a given square should be added. It must not have the same owner or \begin{DoxyReturn}{Returns}
+true if the piece cannot jump past the square 
+\end{DoxyReturn}
+\hypertarget{classlogic_1_1PieceLogic_a25890c82076e10599f19590780feb29c}{\index{logic\-::\-Piece\-Logic@{logic\-::\-Piece\-Logic}!get\-Piece\-Image@{get\-Piece\-Image}}
+\index{get\-Piece\-Image@{get\-Piece\-Image}!logic::PieceLogic@{logic\-::\-Piece\-Logic}}
+\subsubsection[{get\-Piece\-Image}]{\setlength{\rightskip}{0pt plus 5cm}static Buffered\-Image logic.\-Piece\-Logic.\-get\-Piece\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{piece}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1PieceLogic_a25890c82076e10599f19590780feb29c}
+\begin{DoxyReturn}{Returns}
+the image file on disk representing the piece 
+\end{DoxyReturn}
+\hypertarget{classlogic_1_1PieceLogic_aac7446d10b195afb378411addcf5b93a}{\index{logic\-::\-Piece\-Logic@{logic\-::\-Piece\-Logic}!is\-Valid\-Move@{is\-Valid\-Move}}
+\index{is\-Valid\-Move@{is\-Valid\-Move}!logic::PieceLogic@{logic\-::\-Piece\-Logic}}
+\subsubsection[{is\-Valid\-Move}]{\setlength{\rightskip}{0pt plus 5cm}static boolean logic.\-Piece\-Logic.\-is\-Valid\-Move (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{piece, }
+\item[{int}]{rank, }
+\item[{int}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1PieceLogic_aac7446d10b195afb378411addcf5b93a}
+
+\begin{DoxyParams}{Parameters}
+{\em target} & the (rank,file) pair on the board to move to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a given move is possible for a piece 
+\end{DoxyReturn}
+\hypertarget{classlogic_1_1PieceLogic_a93161b8617563e7e01657c47e63187db}{\index{logic\-::\-Piece\-Logic@{logic\-::\-Piece\-Logic}!same\-Owner@{same\-Owner}}
+\index{same\-Owner@{same\-Owner}!logic::PieceLogic@{logic\-::\-Piece\-Logic}}
+\subsubsection[{same\-Owner}]{\setlength{\rightskip}{0pt plus 5cm}static boolean logic.\-Piece\-Logic.\-same\-Owner (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{piece, }
+\item[{{\bf Piece}}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1PieceLogic_a93161b8617563e7e01657c47e63187db}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the piece to compare the current one with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if one piece has the same owner as the other 
+\end{DoxyReturn}
+\hypertarget{classlogic_1_1PieceLogic_a82d3489e7f023e7248abab45768ecf45}{\index{logic\-::\-Piece\-Logic@{logic\-::\-Piece\-Logic}!set\-Up\-Piece@{set\-Up\-Piece}}
+\index{set\-Up\-Piece@{set\-Up\-Piece}!logic::PieceLogic@{logic\-::\-Piece\-Logic}}
+\subsubsection[{set\-Up\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Piece} logic.\-Piece\-Logic.\-set\-Up\-Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{piece, }
+\item[{Color}]{player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classlogic_1_1PieceLogic_a82d3489e7f023e7248abab45768ecf45}
+Converts a string to an instance of a new piece. 
+\begin{DoxyParams}{Parameters}
+{\em piece} & the type of piece to instantiate \\
+\hline
+{\em player} & the color of piece to initialize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the initialized piece matching the string input 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+logic/Piece\-Logic.\-java\end{DoxyCompactItemize}
